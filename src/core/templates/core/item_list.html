@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Items{% endblock %}
+
+{% block content %}
+    <h2>Items registrados</h2>
+
+    <ul>
+        {% for item in items %}
+            <li>
+                <strong>{{ item.name }}</strong>
+
+                {% if item.description %}
+                    <p>{{ item.description }}</p>
+                {% endif %}
+
+                <small>Creado: {{ item.created_at }}</small>
+            </li>
+        {% empty %}
+            <li>No hay items registrados.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
