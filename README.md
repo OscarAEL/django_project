@@ -13,7 +13,7 @@ Proyecto académico desarrollado con Django 5. La aplicación `core` administra 
 Clonar el repositorio y entrar en la carpeta del proyecto:
 
 ```bash
-git clone URL_DEL_REPOSITORIO
+git clone https://github.com/OscarAEL/django_project.git
 cd django_project
 ```
 
